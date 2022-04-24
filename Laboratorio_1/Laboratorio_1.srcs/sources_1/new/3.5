@@ -1,0 +1,28 @@
+`timescale 1ns / 1ps
+module testbench_simple(); // creacion modulo "dummy"
+logic a, b, c; // definicion de conexiones virtuales
+logic x, y, z;
+
+logica_simple logica_simple_DUT( //instancia del modulo a testear
+    .A (a),
+    .B (b),
+    .C (c),
+    .X (x),
+    .Y (y),
+    .Z (z)
+);
+    
+    initial //aca se asignan valores de
+    begin
+        a = 1'b0;
+        b = 1'b0;
+        c = 1'b0;
+        #3
+        a = 1'b1;
+        #6
+        b = 1'b1;
+        #4
+        c = 1'b1;
+    end
+endmodule
+    

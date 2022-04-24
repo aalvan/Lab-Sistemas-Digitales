@@ -1,0 +1,11 @@
+`timescale 1ns / 1ps
+
+module fib(
+    input logic A, B, C, D,
+    output logic F
+);
+    assign F = (~A & ~C) | (~B) & (~C) | (~B) & (~D) ;
+    //assign G = (~B) & (~C);
+    //assign H = (~B) & (~D);
+    //assign K = F | G | H;
+endmodule

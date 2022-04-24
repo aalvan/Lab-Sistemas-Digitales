@@ -1,0 +1,48 @@
+`timescale 1ns / 1ps
+module fib_testbench_simple(); // creacion modulo "dummy"
+logic a, b, c, d; // definicion de conexiones virtuales
+logic f;
+
+fib fib_DUT( //instancia del modulo a testear
+    .A (a),
+    .B (b),
+    .C (c),
+    .D (d),
+    .F (f)
+);
+    
+    initial //aca se asignan valores de
+    begin
+        a = 1'b0; b = 1'b0; c = 1'b0;d = 1'b0;
+        #2
+        a = 1'b0; b = 1'b0; c = 1'b0;d = 1'b1;
+        #2
+        a = 1'b0; b = 1'b0; c = 1'b1;d = 1'b0;
+        #2
+        a = 1'b0; b = 1'b0; c = 1'b1;d = 1'b1;
+        #2
+        a = 1'b0; b = 1'b1; c = 1'b0;d = 1'b0;
+        #2
+        a = 1'b0; b = 1'b1; c = 1'b0;d = 1'b1;
+        #2
+        a = 1'b0; b = 1'b1; c = 1'b1;d = 1'b0;
+        #2
+        a = 1'b0; b = 1'b1; c = 1'b1;d = 1'b1;
+        #2
+        a = 1'b1; b = 1'b0; c = 1'b0;d = 1'b0;
+        #2
+        a = 1'b1; b = 1'b0; c = 1'b0;d = 1'b1;
+        #2
+        a = 1'b1; b = 1'b0; c = 1'b1;d = 1'b0;
+        #2
+        a = 1'b1; b = 1'b0; c = 1'b1;d = 1'b1;
+        #2
+        a = 1'b1; b = 1'b1; c = 1'b0;d = 1'b0;
+        #2
+        a = 1'b1; b = 1'b1; c = 1'b0;d = 1'b1;
+        #2
+        a = 1'b1; b = 1'b1; c = 1'b1;d = 1'b0;
+        #2
+        a = 1'b1; b = 1'b1; c = 1'b1;d = 1'b1;
+    end
+endmodule
