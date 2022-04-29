@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1650916655">
+  <File Type="RCFI_FILE" Name="Reconocedor_fibinarios.rcfi"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Reconocedor_fibinarios_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Reconocedor_fibinarios_postroute_physopt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Reconocedor_fibinarios_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Reconocedor_fibinarios_postplace_pwropt.dcp"/>
+  <File Type="PWROPT-DCP" Name="Reconocedor_fibinarios_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="Reconocedor_fibinarios_placed.dcp"/>
+  <File Type="OPT-DCP" Name="Reconocedor_fibinarios_opt.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="Reconocedor_fibinarios_timing_summary_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Reconocedor_fibinarios.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Reconocedor_fibinarios.sysdef"/>
+  <File Type="BITSTR-MMI" Name="Reconocedor_fibinarios.mmi"/>
+  <File Type="BITSTR-BMM" Name="Reconocedor_fibinarios_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="Reconocedor_fibinarios.nky"/>
+  <File Type="BITSTR-RBT" Name="Reconocedor_fibinarios.rbt"/>
+  <File Type="REPORTS-TCL" Name="Reconocedor_fibinarios_reports.tcl"/>
+  <File Type="RBD_FILE" Name="Reconocedor_fibinarios.rbd"/>
+  <File Type="BITSTR-MSK" Name="Reconocedor_fibinarios.msk"/>
+  <File Type="PA-TCL" Name="Reconocedor_fibinarios.tcl"/>
+  <File Type="NPI_FILE" Name="Reconocedor_fibinarios.npi"/>
+  <File Type="BG-BIN" Name="Reconocedor_fibinarios.bin"/>
+  <File Type="RNPI_FILE" Name="Reconocedor_fibinarios.rnpi"/>
+  <File Type="BG-BGN" Name="Reconocedor_fibinarios.bgn"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Reconocedor_fibinarios_routed_bb.dcp"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="Reconocedor_fibinarios.vdi"/>
+  <File Type="CFI_FILE" Name="Reconocedor_fibinarios.cfi"/>
+  <File Type="BG-DRC" Name="Reconocedor_fibinarios.drc"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Reconocedor_fibinarios_routed_error.dcp"/>
+  <File Type="PA-DCP" Name="Reconocedor_fibinarios.dcp"/>
+  <File Type="PDI-FILE" Name="Reconocedor_fibinarios.pdi"/>
+  <File Type="BG-BIT" Name="Reconocedor_fibinarios.bit"/>
+  <File Type="OPT-DRC" Name="Reconocedor_fibinarios_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Reconocedor_fibinarios.hwdef"/>
+  <File Type="PLACE-IO" Name="Reconocedor_fibinarios_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Reconocedor_fibinarios_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Reconocedor_fibinarios_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Reconocedor_fibinarios_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Reconocedor_fibinarios_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="Reconocedor_fibinarios_routed.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/3_5.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/3_6_1.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/BCD_to_sevenSeg.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/3_6.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/3_7.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/3_3.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/3_5_1.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/3_7_1.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/test_fibinarios.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Reconocedor_fibinarios"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

@@ -2,6 +2,11 @@
 2020.2
 Jun 10 2021
 19:45:28
-/home/aalva/Laboratorio_2/Laboratorio_2.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,uvm,,,,,,
-/home/aalva/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/3_7.sv,1650682067,systemVerilog,,/home/aalva/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/3_7_1.sv,,n_bit_counter,,uvm,,,,,,
-/home/aalva/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/3_7_1.sv,1650681753,systemVerilog,,,,test_n_bit,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_2/Laboratorio_2.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/3_5.sv,1650395882,systemVerilog,,/home/aalva/Laboratorios/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/3_6.sv,,counter_4bit,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/3_6.sv,1650589824,systemVerilog,,/home/aalva/Laboratorios/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/3_6_1.sv,,Reconocedor_fibinarios,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/3_6_1.sv,1650565355,systemVerilog,,/home/aalva/Laboratorios/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/BCD_to_sevenSeg.sv,,fib,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/3_7.sv,1650682067,systemVerilog,,/home/aalva/Laboratorios/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/3_7_1.sv,,n_bit_counter,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/3_7_1.sv,1650911490,systemVerilog,,,,test_n_bit,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/BCD_to_sevenSeg.sv,1650315213,systemVerilog,,/home/aalva/Laboratorios/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/test_fibinarios.sv,,BCD_to_sevenSeg,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_2/Laboratorio_2.srcs/sources_1/new/test_fibinarios.sv,1650913587,systemVerilog,,,,testbench_fibinarios,,uvm,,,,,,

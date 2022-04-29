@@ -1,0 +1,11 @@
+0.7
+2020.2
+Jun 10 2021
+19:45:28
+/home/aalva/Laboratorio_3/Laboratorio_3.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,uvm,,,,,,
+/home/aalva/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_1.sv,1650918735,systemVerilog,,/home/aalva/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_1_1.sv,,decoder,,uvm,,,,,,
+/home/aalva/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_1_1.sv,1650919071,systemVerilog,,,,test_decoder,,uvm,,,,,,
+/home/aalva/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_2.sv,1650923127,systemVerilog,,/home/aalva/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/test_divisor.sv,,divisor,,uvm,,,,,,
+/home/aalva/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_3.sv,1650924494,systemVerilog,,/home/aalva/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_3_2.sv,,divisor_param,,uvm,,,,,,
+/home/aalva/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_3_2.sv,1650925268,systemVerilog,,,,test_divisor_param,,uvm,,,,,,
+/home/aalva/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/test_divisor.sv,1650923463,systemVerilog,,,,test_divisor_code,,uvm,,,,,,
