@@ -1,0 +1,13 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.sim/sim_1/behav/xsim/glbl.v,1651269157,verilog,,,,glbl,,uvm,,,,,,
+E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/3_5_3.sv,1651279624,systemVerilog,,E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_1.sv,,BCD_to_sevenSeg,,uvm,,,,,,
+E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_1.sv,1651280063,systemVerilog,,E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_3.sv,,decoder,,uvm,,,,,,
+E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_3.sv,1651441460,systemVerilog,,E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_4.sv,,divisor_param,,uvm,,,,,,
+E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_3_2.sv,1651445376,systemVerilog,,,,test_divisor_param,,uvm,,,,,,
+E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_4.sv,1651448388,systemVerilog,,E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_4_1.sv,,mux_temporal,,uvm,,,,,,
+E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_4_1.sv,1651450771,systemVerilog,,E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_4_2.sv,,MUX,,uvm,,,,,,
+E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_4_2.sv,1651447157,systemVerilog,,E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_4_3.sv,,n_bit_counter,,uvm,,,,,,
+E:/Clases2022/LabSistDigitales/Laboratorio_3/Laboratorio_3.srcs/sources_1/new/5_4_3.sv,1651448913,systemVerilog,,,,test_mux_temporal,,uvm,,,,,,
