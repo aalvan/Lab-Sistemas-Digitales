@@ -1,0 +1,15 @@
+0.7
+2020.2
+Jun 10 2021
+19:45:28
+/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/S4_actividad1.sv,1651460984,systemVerilog,,/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/modulo_1.sv,,S4_actividad1,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/S4_actividad2.sv,1651467282,systemVerilog,,/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/tb_S4_a2.sv,,S4_actividad2,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/S4_actividad3.sv,1651528872,systemVerilog,,/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/tb_S4_a3.sv,,S4_actividad3,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/modulo_1.sv,1651462094,systemVerilog,,/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/modulo_2.sv,,BCD_to_sevenSeg,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/modulo_2.sv,1651460851,systemVerilog,,/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/modulo_3.sv,,MUX,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/modulo_3.sv,1651460853,systemVerilog,,/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/modulo_4.sv,,decoder,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/modulo_4.sv,1651459944,systemVerilog,,/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/tb_S4.sv,,n_bit_counter,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/tb_S4.sv,1651461712,systemVerilog,,,,tb_S4,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/tb_S4_a2.sv,1651467654,systemVerilog,,,,tb_S4_a2,,uvm,,,,,,
+/home/aalva/Laboratorios/Laboratorio_4/Laboratorio_4.srcs/sources_1/new/tb_S4_a3.sv,1651472535,systemVerilog,,,,tb_S4_a3,,uvm,,,,,,
