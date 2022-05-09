@@ -28,8 +28,16 @@ module S4_actividad3 #(parameter M = 8)(
     );
     logic N, Z, C, V;
     logic [M:0]Result2;
-    
+/*
+    assign N = 'b0;
+    assign Z = 'b0;
+    assign C = 'b0;
+    assignC = 'b0;*/
    always_comb begin
+        N = 'b0;
+        Z = 'b0;
+        C = 'b0;
+        V = 'b0;
         case(OpCode)
             2'd0: // SUMA
                 begin
@@ -38,7 +46,6 @@ module S4_actividad3 #(parameter M = 8)(
                     N = 1; // Para saber si el resultado es negativo
                 if (Result == 'b0)
                     Z = 1; // Para saber si el resultado es 0
-                
                 // condiciones complemento 2
                 if (A[M-1] == 'b0 & B[M-1]== 'b0 & Result[M-1] == 'b1)begin // Si la suma de dos números positivos resulta en un numero negativo es overflow
                         V = 'b1;
@@ -55,7 +62,7 @@ module S4_actividad3 #(parameter M = 8)(
                 if (Result == 'b0)
                     Z = 'b1;
                 // condiciones complemento 2
-                if (A[0] == 'b0 & B[M-1]== 'b1 & Result[M-1] == 'b1)begin 
+                if (A[M-1] == 'b0 & B[M-1]== 'b1 & Result[M-1] == 'b1)begin 
                         V = 'b1;
                     end
                 else if(A[M-1] == 'b1 & B[M-1]== 'b0 & Result[M-1] == 'b0) begin
@@ -63,10 +70,22 @@ module S4_actividad3 #(parameter M = 8)(
                     end
                ///////////////////////
                end 
-            2'd2: // OR
+            2'd2: // OR 
+                begin
                 Result = A | B;
+                if(Result == 'b0)
+                    Z = 1;
+                if (Result[M-1]== 'b1)
+                        N = 'b1;   
+                end
             2'd3: // AND
+                begin
                 Result = A & B;
+                if(Result == 'b0)
+                    Z = 1;
+                if (Result[M-1]== 'b1)
+                    N = 'b1;   
+                end
             default: Result = 'b0;
         endcase
     end

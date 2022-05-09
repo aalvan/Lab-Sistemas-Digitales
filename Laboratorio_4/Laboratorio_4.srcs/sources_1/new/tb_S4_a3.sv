@@ -35,31 +35,31 @@ module tb_S4_a3();
     initial
         begin // {N, Z, C, V}; 
         OpCode = 2'b00; // SUMA
-        A = 2'b0001; // 1
-        B = 2'b0010; // 2
+        A = 4'b0001; // 1
+        B = 4'b0010; // 2
         #10
         OpCode = 2'b01; // RESTA
-        A = 2'b0001; // 1
-        B = 2'b0001; // 1
+        A = 4'b0001; // 1
+        B = 4'b0001; // 1
         #10
         OpCode = 2'b10; // OR
-        A = 2'b0001; // 1
-        B = 2'b0011; // 3
+        A = 4'b0001; // 1
+        B = 4'b0011; // 3
         #10
         OpCode = 2'b11; // AND
-        A = 2'b0001; // 1
-        B = 2'b0011; // 3
+        A = 4'b0001; // 1
+        B = 4'b0011; // 3
         #10
         OpCode = 2'b00; // SUMA
-        A = 2'b0111; //  + 7
-        B = 2'b0111; //  + 7 ----> V = 1 -> overflow
+        A = 4'b0111; //  + 7
+        B = 4'b0111; //  + 7 ----> V = 1 -> overflow
         #10
         OpCode = 2'b01; // RESTA - 
-        A = 2'b1001; // -7
-        B = 2'b1001; // -7 ----> V = 1 -> overflow
+        A = 4'b1001; // -7
+        B = 4'b1001; // -7 ----> V = 1 -> overflow
         #10
         OpCode = 2'b00; // SUMA
-        A = 2'b0011; //  + 3
-        B = 2'b0011; //  + 3 ----> V = 0 -> no overflow
+        A = 4'b0011; //  + 3
+        B = 4'b0011; //  + 3 ----> V = 0 -> no overflow
         end
 endmodule
