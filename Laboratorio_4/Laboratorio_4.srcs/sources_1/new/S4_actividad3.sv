@@ -26,69 +26,49 @@ module S4_actividad3 #(parameter M = 8)(
     output logic [M-1:0]    Result,
     output logic [3:0]      Status
     );
-    logic N, Z, c, V;
+    logic N, Z, C, V;
     logic [M:0]Result2;
-    always_comb begin
-        N = 1'b0;
-        Z = 1'b0;
-        c = 1'b0;
-        V = 1'b0;
-    end
-    always_comb begin
-        if(OpCode == 2'b00) begin
-            Result = A + B;
-            Result2 = A + B;
-            if(Result2[M] == 1)
-                C = 1;
-            else if (Result2[M-1] == 1) 
-                V = 1;
-            end
-            else if(A[M-1]==0 & B[M-1]==0)begin
-                if(Result[M-1]==1)
-                    V = 1;
-             end
-             else if(A[M-1]==1 & B[M-1]==1)begin
-                if(Result[M-1]==0)
-                    V = 1;
-             end     
-        else if(OpCode == 2'b01) begin
-            Result = A - B;
-            Result2 = A - B;
-            if(Result2[M] == 1)
-                    C = 1;
-            else if (Result2[M-1] == 1) 
-                    V = 0;
-            else if(A[M-1]==0 & B[M-1]==1)begin
-                if(Result[M-1]==1)
-                    V = 1;
-             end
-             else if(A[M-1]==1 & B[M-1]==0)begin
-                if(Result[M-1]==0)
-                    V = 1;
-                end
-            end
-           
-        else if(OpCode == 2'b10)
-            Result = A | B;
-        else if(OpCode == 2'b11)
-            Result = A & B;
-    end 
-        
-    always_comb begin
-        if(Result[M-1] == 1)
-            N = 1;
-        else
-            N = 0;
-    end
     
-    always_comb begin
-        if(Result == 0)
-            Z = 1;
-        else
-            Z = 0;
-    end
+   always_comb begin
+        case(OpCode)
+            2'd0: // SUMA
+                begin
+                {C,Result} = A + B; // carry para numeros sin signo
+                if (Result[M-1]== 'b1)
+                    N = 1; // Para saber si el resultado es negativo
+                if (Result == 'b0)
+                    Z = 1; // Para saber si el resultado es 0
+                
+                // condiciones complemento 2
+                if (A[M-1] == 'b0 & B[M-1]== 'b0 & Result[M-1] == 'b1)begin // Si la suma de dos números positivos resulta en un numero negativo es overflow
+                        V = 'b1;
+                    end
+                 if (A[M-1] == 'b1 & B[M-1]== 'b1 & Result[M-1] == 'b0)begin
+                        V = 'b1;
+                    end
 
-    assign Status = {N,Z,c,V};
-         
-    
+                end
+            2'd1:begin // RESTA 
+                {C,Result} = A - B;// borrow para numeros sin signo
+                if (Result[M-1]== 'b1)
+                    N = 'b1;
+                if (Result == 'b0)
+                    Z = 'b1;
+                // condiciones complemento 2
+                if (A[0] == 'b0 & B[M-1]== 'b1 & Result[M-1] == 'b1)begin 
+                        V = 'b1;
+                    end
+                else if(A[M-1] == 'b1 & B[M-1]== 'b0 & Result[M-1] == 'b0) begin
+                        V = 'b1;
+                    end
+               ///////////////////////
+               end 
+            2'd2: // OR
+                Result = A | B;
+            2'd3: // AND
+                Result = A & B;
+            default: Result = 'b0;
+        endcase
+    end
+    assign Status = {N, Z, C, V}; 
 endmodule

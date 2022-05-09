@@ -21,11 +21,11 @@
 
 
 module tb_S4_a3();
-    logic [2-1:0]    A, B;
+    logic [4-1:0]    A, B;
     logic [1:0]      OpCode;   
-    logic [2-1:0]    Result;
+    logic [4-1:0]    Result;
     logic [3:0]      Status;
-    S4_actividad3 #(.M(2)) DUT_S4_actividad3(
+    S4_actividad3 #(.M(4)) DUT_S4_actividad3(
     .A(A),
     .B(B),
     .OpCode(OpCode),
@@ -33,21 +33,33 @@ module tb_S4_a3();
     .Status(Status)
     );
     initial
-        begin
-        OpCode = 2'b00;
-        A = 2'b01;
-        B = 2'b10;
+        begin // {N, Z, C, V}; 
+        OpCode = 2'b00; // SUMA
+        A = 2'b0001; // 1
+        B = 2'b0010; // 2
         #10
-        OpCode = 2'b01;
-        A = 2'b01;
-        B = 2'b01;
+        OpCode = 2'b01; // RESTA
+        A = 2'b0001; // 1
+        B = 2'b0001; // 1
         #10
-        OpCode = 2'b10;
-        A = 2'b01;
-        B = 2'b11;
+        OpCode = 2'b10; // OR
+        A = 2'b0001; // 1
+        B = 2'b0011; // 3
         #10
-        OpCode = 2'b11;
-        A = 2'b01;
-        B = 2'b11;
+        OpCode = 2'b11; // AND
+        A = 2'b0001; // 1
+        B = 2'b0011; // 3
+        #10
+        OpCode = 2'b00; // SUMA
+        A = 2'b0111; //  + 7
+        B = 2'b0111; //  + 7 ----> V = 1 -> overflow
+        #10
+        OpCode = 2'b01; // RESTA - 
+        A = 2'b1001; // -7
+        B = 2'b1001; // -7 ----> V = 1 -> overflow
+        #10
+        OpCode = 2'b00; // SUMA
+        A = 2'b0011; //  + 3
+        B = 2'b0011; //  + 3 ----> V = 0 -> no overflow
         end
 endmodule
